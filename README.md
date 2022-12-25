@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://peterng2036.github.io/frontend-mentor-challenge-Product-preview-card-component/)
+- Solution URL: [Link](https://peterng2036.github.io/frontend-mentor-challenge-Product-preview-card-component/)
 
 ## My process
 
