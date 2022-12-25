@@ -24,8 +24,11 @@ Users should be able to:
 ### Screenshot
 
 Desktop View:
+
 ![](./screenshot-desktop.jpg)
+
 Mobile View:
+
 ![](./screenshot-mobile.jpg)
 
 ### Links
