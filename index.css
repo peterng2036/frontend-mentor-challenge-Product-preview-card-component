@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+:root {
+  --primary-dark-cyan: hsl(158, 36%, 37%);
+  --primary-cream: hsl(30, 38%, 92%);
+  --neutral-dark-blue: hsl(212, 21%, 14%);
+  --neutral-dark-grayish-blue: hsl(228, 12%, 48%);
+  --neutral-white: hsl(0, 0%, 100%);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #f3eae3;
+  padding: 24px 0;
+}
+
+.product-img-desktop {
+  height: 480px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  max-width: 100%;
+}
+
+.product-img-mobile {
+  display: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  max-width: 100%;
+}
+
+.product-preview-card {
+  max-width: 640px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.details-container {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.product-type {
+  color: var(--neutral-dark-grayish-blue);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 6px;
+}
+
+.product-title {
+  font-family: "Fraunces", serif;
+  font-size: 36px;
+  line-height: 1;
+}
+
+.product-desc {
+  color: var(--neutral-dark-grayish-blue);
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.8;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.price {
+  font-size: 36px;
+  color: var(--primary-dark-cyan);
+  font-family: "Fraunces", serif;
+}
+
+.original-price {
+  text-decoration: line-through;
+  font-family: "Montserrat", sans-serif;
+  color: var(--neutral-dark-grayish-blue);
+}
+
+.button {
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-dark-cyan);
+  color: var(--neutral-white);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  gap: 16px;
+  user-select: none; /* Standard syntax */
+  transition: all 0.4s;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #1a4031;
+}
+
+@media only screen and (max-width: 650px) {
+  .product-preview-card {
+    max-width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 8px;
+    background-color: white;
+  }
+
+  .product-img-desktop {
+    display: none;
+  }
+
+  .product-img-mobile {
+    display: block;
+  }
+}
