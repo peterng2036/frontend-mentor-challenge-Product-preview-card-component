@@ -23,6 +23,8 @@ body {
   min-width: 100vw;
   background-color: #f3eae3;
   padding: 24px 0;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .product-img-desktop {
